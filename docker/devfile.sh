@@ -5,3 +5,4 @@ do
 echo "hello frm git!, running on `hostname` server"
 done
 echo "modified file"
+echo "new file added"
