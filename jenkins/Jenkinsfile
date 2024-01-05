@@ -15,7 +15,8 @@ pipeline{
                   steps{
                       sh '''
                             bash ${WORKSPACE}/docker/dockerfile.sh
-                        
+
+                     
                        '''
 }
 }
