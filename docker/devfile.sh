@@ -1,9 +1,22 @@
-!#/bin/bash
-
-for i in {1..3}
-do 
-echo "hello frm git!, running on `hostname` server"
-done
-echo "modified file"
-echo "new file add"
-echo "New modified"
+pipeline{
+   agent any
+        stages{
+             stage('stage1'){
+                steps{
+                  sh 'echo stage1'
+}
+}
+             stage('stage2'){
+                  steps{
+                      sh 'echo stage2'
+}
+}
+            stage('stage3'){
+                  steps{
+                      sh '''
+                            bash ${WORKSPACE}/docker/dockerfile.sh
+                       '''
+}
+}
+}
+}
