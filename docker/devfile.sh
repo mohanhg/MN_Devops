@@ -6,3 +6,4 @@ echo "hello frm git!, running on `hostname` server"
 done
 echo "modified file"
 echo "new file add"
+Echo "New modified"
